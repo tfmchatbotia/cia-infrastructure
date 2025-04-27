@@ -1,0 +1,36 @@
+.env
+postgres_data/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# Entornos virtuales
+env/
+venv/
+ENV/
+VENV/
+
+# Archivos de configuración
+*.env
+*.env.*
+
+# Docker
+**/data/
+**/volumes/
+*.pid
+*.log
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# Otros
+*.sqlite3
+
