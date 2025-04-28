@@ -1,18 +1,15 @@
-## cia-data-loader docker-compose
-
-
 services:
-  # Servicio de la aplicación Python (FastAPI)
+  # Servicio de la aplicación Python (loader)
   tfm_ai_data_loader:
     build:
       context: ./python_custom
     container_name: tfm_ai_data_loader_container
     volumes:
-      - ./app:/app
+      - .:/app              # Código de la app
+      - ./files:/files            # Nuevo: todo el directorio "file" montado dentro del contenedor
     working_dir: /app
-    command: ["/venv/bin/python", "main_tfm.py"]
- #   depends_on:
- #     - tfm_ai_postgres_container  # El servicio depende de `tfm_ai_postgres`
+    command: >
+      /venv/bin/python ./app/main_tfm.py && tail -f /dev/null  # Ejecutar el script y luego mantener el contenedor activo
     networks:
       - cia-infrastructure_tfm_ai_network  # Red compartida con `cia-infrastructure`
 

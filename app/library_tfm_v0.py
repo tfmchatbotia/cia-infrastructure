@@ -11,6 +11,23 @@
 # 
 
 
+# Carga de CSV
+import pandas as pd
+
+# Fundiones de carga de ficheros
+import os
+# Para generar el gráfico de dependecias
+import networkx as nx
+import matplotlib.pyplot as plt
+# Calculo de localizaciones
+import math
+import geocoder
+
+'''
+import pandas as pd
+import networkx as nx
+import matplotlib.pyplot as plt
+'''
 ##########################
 # tabla de correspondencia
 # Se detecta que los nombres de las columnas no coinciden entre las M4 y las GTFS
@@ -25,16 +42,14 @@ convert_keys = [
     
 ]
 
+convert_keys = []
+
 
 #----------------------------------
 # ### Inicialización de Variables
 #----------------------------------
 
-"C:/Users/MX0046001DC5030/Downloads/google_transit_M4 (4)/stop_times.txt",
-"C:/Users/MX0046001DC5030/Downloads/google_transit_M4 (4)/trips.txt"
 
-
-file_paths = "C:\\Users\\MX0046001DC5030\\Downloads\\google_transit_M4" # Reemplaza con la ruta correcta
 extension= [".txt", ".csv"] # Lista de extensiones válidas a procesar
 explore = 15 ## Parametro para delimitar el numero de elementos devueltos
 split_key = 'df_M4' ## Raiz para la división entre dataframe 
@@ -44,33 +59,36 @@ split_key = 'df_M4' ## Raiz para la división entre dataframe
 
 # #### Cargar ficheros
 
-def limpiar_archivos(directorio, extensiones=['.txt']):
+import os
+
+def limpiar_archivos(directorio, extensiones):
     """
     Reemplaza \r\n por \n en archivos con extensiones dadas.
     Guarda los archivos en UTF-8 y sobrescribe los originales.
+    Recorre subdirectorios de forma recursiva.
     """
-    archivos = [
-        f for f in os.listdir(directorio)
-        if any(f.endswith(ext) for ext in extensiones)
-    ]
+    for root, dirs, files in os.walk(directorio):  # Recorrer directorios y subdirectorios
+        for nombre_archivo in files:
+            # print('extensiones:',extensiones)
+            if any(nombre_archivo.endswith(ext) for ext in extensiones):  # Filtra por extensiones
+                ruta_archivo = os.path.join(root, nombre_archivo)  # Obtiene la ruta completa
+                # print(f'Procesando archivo: {ruta_archivo}')
+                
+                try:
+                    with open(ruta_archivo, 'r', encoding='utf-8', errors='ignore') as f:
+                        contenido = f.read()
 
-    for nombre_archivo in archivos:
-        ruta_archivo = os.path.join(directorio, nombre_archivo)
-        print(f'Procesando archivo: {nombre_archivo}')
-        
-        try:
-            with open(ruta_archivo, 'r', encoding='utf-8', errors='ignore') as f:
-                contenido = f.read()
+                    contenido_limpio = contenido.replace('\r\n', '\n')
 
-            contenido_limpio = contenido.replace('\r\n', '\n')
+                    with open(ruta_archivo, 'w', encoding='utf-8') as f:
+                        f.write(contenido_limpio)
 
-            with open(ruta_archivo, 'w', encoding='utf-8') as f:
-                f.write(contenido_limpio)
+                    # print(f'✔ Procesado: {nombre_archivo}')
 
-            print(f'✔ Procesado: {nombre_archivo}')
+                except Exception as e:
+                    print(f'❌ Error al procesar {nombre_archivo}: {e}. Se omitirá.')
 
-        except Exception as e:
-            print(f'❌ Error al procesar {nombre_archivo}: {e}. Se omitirá.')
+
 
 def format_trip_id(row):
     route_id = row['route_id']
@@ -103,7 +121,7 @@ def format_trip_id(row):
 
 def load_files_in_dataframes(path_, sep=','):
     """
-    Carga archivos .txt de un directorio en DataFrames de pandas,
+    Carga archivos .txt o .csv de un directorio en DataFrames de pandas,
     creando un DataFrame con el nombre 'df_' + nombre del archivo.
 
     Args:
@@ -115,11 +133,12 @@ def load_files_in_dataframes(path_, sep=','):
         Un diccionario donde las claves son los nombres de los archivos (sin extensión)
         y los valores son los DataFrames correspondientes. Devuelve None si hay un error.
     """
+    # print(f'Ruta: {path_}')
     lista_id =[]
     lista_id_=[]
     dataframes = {}
     try:
-        print(f'Ruta: {path_}')
+        # print(f'Ruta: {path_}')
         for fullfilename in os.listdir(path_):
             if any(fullfilename.endswith(ext) for ext in extension):
                 filename_ = fullfilename[:-4]
@@ -131,21 +150,18 @@ def load_files_in_dataframes(path_, sep=','):
                     df.columns = df.columns.str.lower()
                     # Normalizamos los nombres de las columnas
                     df.rename(columns={col: convert_list[col] for col in df.columns if col in convert_list}, inplace=True)
-                                                        
-                                       
-                    
                     for mapping in convert_keys:
                         for source_col, (target_col, slice_str) in mapping.items():
                             if source_col in df.columns and target_col not in df.columns:
-                                start, end = map(int, slice_str.split(':'))
+                              	start, end = map(int, slice_str.split(':'))
                                 
-                                if target_col == 'route_id':
-                                    df[target_col] = df[source_col].str.split('-').str[1].str.split('_').str[0]
-                                    df[target_col] = pd.to_numeric(df[target_col], errors='coerce')  # Convierte '' y errores a NaN
-                                    df[target_col] = df[target_col].apply(lambda x: f"4__{int(x)}" if pd.notnull(x) else None)
+                            if target_col == 'route_id':
+                              	df[target_col] = df[source_col].str.split('-').str[1].str.split('_').str[0]
+                              	df[target_col] = pd.to_numeric(df[target_col], errors='coerce')  # Convierte '' y errores a NaN
+                              	df[target_col] = df[target_col].apply(lambda x: f"4__{int(x)}" if pd.notnull(x) else None)
                                                                                    
-                                else:
-                                    df[target_col] = df[source_col].str[start:end]
+                            else:
+                                df[target_col] = df[source_col].str[start:end]
 
                                 
                     '''if 'idftramo' in df.columns:
@@ -400,73 +416,6 @@ def location_gps():
     
     # Mostrar coordenadas
     print(f"Tu ubicación aproximada es: {ubicacion.latlng}")
-
-
-# # MAIN
-
-
-
-limpiar_archivos(file_paths, extensiones=extension)
-
-
-# Caga de los datos
-dataframes = load_files_in_dataframes(file_paths, sep=',') # Asumiendo que el separador es la ,
-'''
-if dataframes:
-    for fileName, df in dataframes.items():
-        print(f"\nInformación del DataFrame '{f'df_{fileName}'}':") # Imprime el nombre del DataFrame
-        
-        print(f'Columnas :{globals()[f"df_{fileName}"].columns.tolist()}')
-
-
-       #  print(f'CATA DEL DATAFRAME \n{globals()[f"df_{fileName}"].head(explore)}')
-'''
-
-####-------------------
-# Propección de los df
-####-------------------
-
-for fileName, df in dataframes.items():
-        print(f"\nInformación del DataFrame '{f'df_{fileName}'}':") # Imprime el nombre del DataFrame
-        
-        # print(f'Columnas :{globals()[f"df_{fileName}"].columns.tolist()}') #Imprime el nombre de cada columna 
-
-
-        # print(f'CATA DEL DATAFRAME \n{globals()[f"df_{fileName}"].head(explore)}') #Imprime  un head de la tabla
-
-
-# ## Identificar dependencias entre los Df
-
-
-
-tempGlobal = globals() ## Para evitar que intervengan las variables de esta celda
-relaciones = {}  # Define el diccionario relaciones aquí
-relaciones_M4 = {}
-relaciones_NO_M4 = {}
-
-# Crear un grafo dirigido
-G = nx.DiGraph()
-G_NO_M4 = nx.DiGraph()
-G_M4 = nx.DiGraph()
-###PARA las tablas M4 y No M4 diferencias por la raiz
-
-dependency_dataframes(globals())
-tree_dataframes(globals())
-
-
-# ## Pasos
-# ### Cargar los datos 
-# ### Función para identicar la boca de metro más cercana dada la localización del que pregunta 
-# ### Función para identificar la geolocalización de la persona ✅ 
-# 
-# 
-
-
-
-location_gps();
-
-
-
 
 
 

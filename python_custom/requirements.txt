@@ -1,5 +1,5 @@
-fastapi==0.95.0
-uvicorn==0.21.0
-sqlalchemy
+pandas==2.2.3
+networkx==3.4.2
+matplotlib==3.10.1
+geocoder
 python-dotenv
-psycopg2-binary
