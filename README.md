@@ -5,10 +5,15 @@
 2. Crea un archivo `.env` basado en el ejemplo.
 
 POSTGRES_USER=admin ## Usuario de la bases de datos
-POSTGRES_PASSWORD=secretpassword ## Clave del usuaario
+
+POSTGRES_PASSWORD=secretpassword ## Clave del usuario
+
 POSTGRES_DB=mydb ## nombre del esquema
+
 POSTGRES_HOST=tfm_ai_postgres_container ##nombre del contenedor que contiene la base de datos
+
 PYTHON_FILE =../files ## Ruta donde se encuentran los ficheros a procesar
+
 
 3. Ejecuta:
 
