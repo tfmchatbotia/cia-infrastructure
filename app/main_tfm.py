@@ -46,6 +46,9 @@ import geocoder
 
 
 
+
+
+
 ########################################################################################################
 # tabla de correspondencia
 # Se detecta que los nombres de las columnas no coinciden entre las M4 y las GTFS
@@ -69,8 +72,9 @@ load_dotenv(dotenv_path='../.env')
 load_dotenv()
 
 file_paths = os.getenv("PYTHON_FILE") #lo coge del env
-# print ('file_paths :',file_paths)
-extension= [".txt", ".csv"] # Lista de extensiones válidas a procesar
+print ('file_paths :',file_paths)
+
+
 explore = 15 ## Parametro para delimitar el numero de elementos devueltos
 ########################################################################################################
 
@@ -88,43 +92,45 @@ split_key = 'df_M4' ## Raiz para la división entre dataframe
 # # MAIN
 
 
-limpiar_archivos(file_paths, extensiones=extension)
+
+clean_file(file_paths, extensions=['.txt', '.csv'])
 
 
 # Caga de los datos
 dataframes = load_files_in_dataframes(file_paths, sep=',') # Asumiendo que el separador es la ,
 '''
 if dataframes:
-    for fileName, df in dataframes.items():
-        print(f"\nInformación del DataFrame '{f'df_{fileName}'}':") # Imprime el nombre del DataFrame
+    for file_name, df in dataframes.items():
+        print(f"\nInformación del DataFrame '{f'df_{file_name}'}':") # Imprime el nombre del DataFrame
         
-        print(f'Columnas :{globals()[f"df_{fileName}"].columns.tolist()}')
+        print(f'Columnas :{globals()[f"df_{file_name}"].columns.tolist()}')
 
 
-       #  print(f'CATA DEL DATAFRAME \n{globals()[f"df_{fileName}"].head(explore)}')
+       #  print(f'CATA DEL DATAFRAME \n{globals()[f"df_{file_name}"].head(explore)}')
 '''
 
 ####-------------------
 # Propección de los df
 ####-------------------
 
-for fileName, df in dataframes.items():
-        print(f"\nInformación del DataFrame '{f'df_{fileName}'}':") # Imprime el nombre del DataFrame
-        
-        # print(f'Columnas :{globals()[f"df_{fileName}"].columns.tolist()}') #Imprime el nombre de cada columna 
+if dataframes:
+	for file_name, df in dataframes.items():
+		print(f"\nInformación del DataFrame '{f'df_{file_name}'}':") # Imprime el nombre del DataFrame
+
+		# print(f'Columnas :{globals()[f"df_{file_name}"].columns.tolist()}') #Imprime el nombre de cada columna 
 
 
-        # print(f'CATA DEL DATAFRAME \n{globals()[f"df_{fileName}"].head(explore)}') #Imprime  un head de la tabla
+		# print(f'CATA DEL DATAFRAME \n{globals()[f"df_{file_name}"].head(explore)}') #Imprime  un head de la tabla
 
 
-# ## Identificar dependencias entre los Df
+	# ## Identificar dependencias entre los Df
 
 
 
 tempGlobal = globals() ## Para evitar que intervengan las variables de esta celda
-relaciones = {}  # Define el diccionario relaciones aquí
-relaciones_M4 = {}
-relaciones_NO_M4 = {}
+relactions = {}  # Define el diccionario relaciones aquí
+relactions_M4 = {}
+relactions_NO_M4 = {}
 
 # Crear un grafo dirigido
 G = nx.DiGraph()

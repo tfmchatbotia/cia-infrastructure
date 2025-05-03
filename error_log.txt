@@ -1,0 +1,12 @@
+Error inesperado en agency.txt: name 'df' is not defined
+Error inesperado en calendar.txt: name 'df' is not defined
+Error inesperado en calendar_dates.txt: name 'df' is not defined
+Error inesperado en fare_attributes.txt: name 'df' is not defined
+Error inesperado en fare_rules.txt: name 'df' is not defined
+Error inesperado en feed_info.txt: name 'df' is not defined
+Error inesperado en frequencies.txt: name 'df' is not defined
+Error inesperado en routes.txt: name 'df' is not defined
+Error inesperado en shapes.txt: name 'df' is not defined
+Error inesperado en stops.txt: name 'df' is not defined
+Error inesperado en stop_times.txt: name 'df' is not defined
+Error inesperado en trips.txt: name 'df' is not defined

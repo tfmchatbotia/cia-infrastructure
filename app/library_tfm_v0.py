@@ -50,7 +50,6 @@ convert_keys = []
 #----------------------------------
 
 
-extension= [".txt", ".csv"] # Lista de extensiones válidas a procesar
 explore = 15 ## Parametro para delimitar el numero de elementos devueltos
 split_key = 'df_M4' ## Raiz para la división entre dataframe 
 
@@ -61,32 +60,85 @@ split_key = 'df_M4' ## Raiz para la división entre dataframe
 
 import os
 
-def limpiar_archivos(directorio, extensiones):
-    """
-    Reemplaza \r\n por \n en archivos con extensiones dadas.
-    Guarda los archivos en UTF-8 y sobrescribe los originales.
-    Recorre subdirectorios de forma recursiva.
-    """
-    for root, dirs, files in os.walk(directorio):  # Recorrer directorios y subdirectorios
-        for nombre_archivo in files:
-            # print('extensiones:',extensiones)
-            if any(nombre_archivo.endswith(ext) for ext in extensiones):  # Filtra por extensiones
-                ruta_archivo = os.path.join(root, nombre_archivo)  # Obtiene la ruta completa
-                # print(f'Procesando archivo: {ruta_archivo}')
+### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
+### limpiar_archivos
+### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
+### Reemplaza \r\n por \n en archivos con extensiones dadas.
+### Guarda los archivos en UTF-8 y sobrescribe los originales.
+### Recorre subdirectorios de forma recursiva.
+### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
+
+def clean_file(directory, extensions=['.txt']):
+    try : 
+      for root, dirs, files in os.walk(directory):  # Recorrer directorios y subdirectorios
+        for file_name in files:
+            # print('extension:',extensions)
+            if any(file_name.endswith(extension) for extension in extensions):  # Filtra por extensiones
+                file_path = os.path.join(root, file_name)  # Obtiene la ruta completa
+                # print(f'Procesando archivo: {file_path}')
                 
                 try:
-                    with open(ruta_archivo, 'r', encoding='utf-8', errors='ignore') as f:
-                        contenido = f.read()
+                    with open(file_path, 'r', encoding='utf-8', errors='ignore') as f:
+                        content = f.read()
 
-                    contenido_limpio = contenido.replace('\r\n', '\n')
+                    content_cleaned = content.replace('\r\n', '\n')
 
-                    with open(ruta_archivo, 'w', encoding='utf-8') as f:
-                        f.write(contenido_limpio)
+                    with open(file_path, 'w', encoding='utf-8') as f:
+                        f.write(content_cleaned)
 
-                    # print(f'✔ Procesado: {nombre_archivo}')
+                    # print(f'✔ Procesado: {file_name}')
 
                 except Exception as e:
-                    print(f'❌ Error al procesar {nombre_archivo}: {e}. Se omitirá.')
+                    print(f'❌ Error al procesar {file_name}: {e}. Se omitirá.')
+    except Exception:
+        return f'error {Exception}'
+        
+        
+### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
+### limpiar_archivos
+### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
+### Reemplaza \r\n por \n en archivos con extensiones dadas.
+### Guarda los archivos en UTF-8 y sobrescribe los originales.
+### Recorre subdirectorios de forma recursiva.
+### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
+
+
+# Función para convertir a minúsculas solo las columnas con letras
+
+def lowercase_if_letters_only(df_temp):
+    try: 	
+      for col in df_temp.columns:
+        # Verificar si todos los valores de la columna son letras
+        if df_temp[col].apply(lambda x: str(x).isalpha()).all():  # Chequea si todos los elementos son letras
+            df_temp[col] = df_temp[col].str.lower()  # Convierte a minúsculas
+      return df_temp
+    
+    except Exception:
+        return f'error {Exception}'
+
+
+def is_words(column):
+    """
+    Verifica si todos los valores de una columna son solo letras (sin números ni caracteres especiales).
+    """
+    return column.apply(lambda x: bool(re.match(r'^[A-Za-z]+$', str(x)))).all()
+
+def lower_column(df_temp, columns_str):
+    """
+    Asegura que las columnas especificadas sean de tipo string antes de aplicar operaciones con .str,
+    y convierte a minúsculas las columnas donde todos los datos son letras.
+    """
+    for column in columns_str:
+        if column in df_temp.columns:
+            # Convertir la column a tipo string, manejando nulos
+            df_temp[column] = df_temp[column].fillna('').astype(str)
+            
+            # Verificar si todos los valores de la columna son letras
+            if is_words(df_temp[column]):
+                # Si todos los valores son letras, convertir a minúsculas
+                df_temp[column] = df_temp[column].str.lower()
+
+    return df_temp
 
 
 
@@ -115,91 +167,80 @@ def format_trip_id(row):
         return f"4_I{route_id}_2023I_"
 
 
-
-
-
-
-def load_files_in_dataframes(path_, sep=','):
+def load_files_in_dataframes(file_path, sep=',', extensions=['.txt', '.csv']):
     """
-    Carga archivos .txt o .csv de un directorio en DataFrames de pandas,
-    creando un DataFrame con el nombre 'df_' + nombre del archivo.
-
-    Args:
-        path_: La ruta al directorio que contiene los archivos .txt.
-        sep: El separador de campos en los archivos (por defecto ',').
-              Puede ser ',', '\t', ' ', etc.
-
-    Returns:
-        Un diccionario donde las claves son los nombres de los archivos (sin extensión)
-        y los valores son los DataFrames correspondientes. Devuelve None si hay un error.
+    Carga archivos de texto o CSV en un directorio a DataFrames de pandas.
     """
-    # print(f'Ruta: {path_}')
-    lista_id =[]
-    lista_id_=[]
+    lista_id = []
     dataframes = {}
+
     try:
-        # print(f'Ruta: {path_}')
-        for fullfilename in os.listdir(path_):
-            if any(fullfilename.endswith(ext) for ext in extension):
-                filename_ = fullfilename[:-4]
-                filepath = os.path.join(path_, fullfilename)
-                print(f'Procesando archivo: {fullfilename}')
+        for full_file_name in os.listdir(file_path):
+            filepath = os.path.join(file_path, full_file_name)
+            
+            # Evitar procesar directorios
+            if not os.path.isfile(filepath):
+                # print(f"[Info] '{full_file_name}' es un directorio. Se omitirá.")
+                load_files_in_dataframes(filepath, sep=',', extensions=['.txt', '.csv'])
+            elif any(full_file_name.endswith(extension) for extension in extensions):
+                file_name = full_file_name[:-4]  # nombre sin extensión
+                print(f'Procesando archivo: {full_file_name}')
                 try:
                     df = pd.read_csv(filepath, sep=sep, header=0)
-                    ## 
                     df.columns = df.columns.str.lower()
-                    # Normalizamos los nombres de las columnas
+                    
                     df.rename(columns={col: convert_list[col] for col in df.columns if col in convert_list}, inplace=True)
+
                     for mapping in convert_keys:
                         for source_col, (target_col, slice_str) in mapping.items():
                             if source_col in df.columns and target_col not in df.columns:
-                              	start, end = map(int, slice_str.split(':'))
-                                
-                            if target_col == 'route_id':
-                              	df[target_col] = df[source_col].str.split('-').str[1].str.split('_').str[0]
-                              	df[target_col] = pd.to_numeric(df[target_col], errors='coerce')  # Convierte '' y errores a NaN
-                              	df[target_col] = df[target_col].apply(lambda x: f"4__{int(x)}" if pd.notnull(x) else None)
-                                                                                   
-                            else:
-                                df[target_col] = df[source_col].str[start:end]
+                                start, end = map(int, slice_str.split(':'))
+                                if target_col == 'route_id':
+                                    df[target_col] = df[source_col].str.split('-').str[1].str.split('_').str[0]
+                                    df[target_col] = pd.to_numeric(df[target_col], errors='coerce')
+                                    df[target_col] = df[target_col].apply(lambda x: f"4__{int(x)}" if pd.notnull(x) else None)
+                                else:
+                                    df[target_col] = df[source_col].str[start:end]
+                    
+                    if 'objectid' in df.columns:
+                        df.reset_index(drop=True, inplace=True)
+                        df.set_index('objectid', inplace=True)
+                    # las columnas con letras las pone en minusculas
+                    
 
-                                
-                    '''if 'idftramo' in df.columns:
-                            df['tripp_id'] = df.apply(format_trip_id, axis=1)
-'''
+                    lista_id_ = [col for col in df.columns if col.endswith('_id')]
+                    lista_id += [col for col in df.columns if col.startswith('id')] 
+                    lista_id = list(set(lista_id + lista_id_))
                     
-                       
-                    if 'objectid'in df.columns:
-                        df.reset_index(drop=True, inplace=True)  # elimina el índice anterior por si venía de otro DataFrame
-                        df.set_index('objectid', inplace=True)    
-                    # Crea un DataFrame con el nombre 'df_' + nombre del archivo:
-                    
-                    lista_id_ =[col for col in df.columns if col.endswith('_id')]
-                    
-                    lista_id =[col for col in df.columns if col.startswith('id')]
-                     
-                    lista_id =lista_id +lista_id_
-                    if len(lista_id):
-                        print (f'df_{filename_} lista:{lista_id}')   
-                        
-                    
-                    
-                    df_name = f"df_{filename_}"  # Crea el nombre del DataFrame
-                    globals()[df_name] = df  # Crea una variable global con el nuevo nombre
-                    dataframes[filename_] = df
+                    list_change = df.columns.difference(lista_id).tolist()
+                    df = lower_column(df,list_change)
+
+                    if lista_id:
+                        print(f'df_{file_name} lista: {lista_id}')
+
+                    df_name = f"df_{file_name}"
+                    globals()[df_name] = df
+                    dataframes[file_name] = df
+
                 except pd.errors.EmptyDataError:
-                    print(f"Advertencia: El archivo {fullfilename} está vacío. Se omitirá.")
+                    print(f"Advertencia: El archivo {full_file_name} está vacío. Se omitirá.")
                 except pd.errors.ParserError as e:
-                    print(f"Error al analizar el archivo {fullfilename}: {e}. Verifica el separador y el formato del archivo. Se omitirá.")
+                    print(f"Error al analizar el archivo {full_file_name}: {e}. Se omitirá.")
                 except Exception as e:
-                    print(f"Error inesperado al procesar {fullfilename}: {e}. Se omitirá.")
+                    print(f"Error __inesperado__ al procesar {full_file_name}: {e}. Se omitirá.")
         return dataframes
+
     except FileNotFoundError:
-        print(f"Error: El directorio '{path_}' no existe.")
+        print(f"Error: El directorio '{file_path}' no existe.")
         return None
     except Exception as e:
         print(f"Error inesperado: {e}")
         return None
+
+
+
+
+
 
 
 # #### Dibujar graficos
@@ -238,7 +279,7 @@ def dependency_dataframes(globals_dict, split_key="df_M4"):
     df_names = [name for name in globals_dict if name.startswith('df_') and isinstance(globals_dict.get(name), pd.DataFrame)]
 
     if not df_names:
-        print("No se encontraron DataFrames en globals().")
+        # print("No se encontraron DataFrames en globals().")
         return
 
     for dfx_name in df_names:
@@ -315,7 +356,7 @@ def tree_dataframes(globals_dict, split_key="df_M4"):
     df_names = [name for name in globals_dict if name.startswith('df_') and isinstance(globals_dict.get(name), pd.DataFrame)]
 
     if not df_names:
-        print("No se encontraron DataFrames en globals().")
+        # print("No se encontraron DataFrames en globals().")
         return
 
     # Crear relaciones entre los DataFrames manualmente (esto es solo un ejemplo)
