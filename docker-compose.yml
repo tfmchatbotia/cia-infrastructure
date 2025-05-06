@@ -9,7 +9,7 @@ services:
       - ./files:/files            # Nuevo: todo el directorio "file" montado dentro del contenedor
     working_dir: /app
     command: >
-      /venv/bin/python ./app/main_tfm.py && tail -f /dev/null  # Ejecutar el script y luego mantener el contenedor activo
+      /venv/bin/python ./app/cia_data_loader_main.py && tail -f /dev/null  # Ejecutar el script y luego mantener el contenedor activo
     networks:
       - cia-infrastructure_tfm_ai_network  # Red compartida con `cia-infrastructure`
 

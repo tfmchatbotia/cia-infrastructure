@@ -1,0 +1,4 @@
+# No ignores los archivos que necesitas
+!.dockerignore
+!.gitignore
+
