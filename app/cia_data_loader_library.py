@@ -468,34 +468,58 @@ def get_unique_columns(df):
 # 
 #  Tiene como objetivo insertar datos de DataFrames de pandas en una base de datos PostgreSQL, evitando que se inserten registros duplicados basados en columnas únicas.
 
-# In[13]:
+# In[19]:
 
+
+from sqlalchemy import create_engine, text
+from sqlalchemy.exc import SQLAlchemyError
+from sqlalchemy import inspect
 
 def insert_dataframes_to_postgres(dataframes, insertion_order, postgres_user, postgres_password, postgres_db, host='localhost', port=5432, if_exists='replace', unique_columns=None):
-    db_url = f"postgresql+psycopg2://{postgres_user}:{postgres_password}@{host}:{port}/{postgres_db}"
-    print("db_url", db_url)
-    engine = create_engine(db_url)
     
+    db_url = f"postgresql+psycopg2://{postgres_user}:{postgres_password}@{host}:{port}/{postgres_db}"
+    print ("db_url", db_url)
+    engine = create_engine(db_url)
+    inspector = inspect(engine)
+    
+    # Primero, eliminar la tabla 'agency' y sus dependencias
+    try:
+        print("🔄 Eliminando tabla 'agency' y sus dependencias...")
+        with engine.connect() as conn:
+            conn.execute(text("DROP TABLE IF EXISTS agency CASCADE"))
+        print("✅ Tabla 'agency' y sus dependencias eliminadas.")
+    except SQLAlchemyError as e:
+        print(f"❌ Error al eliminar 'agency': {e}")
+    
+    # Ahora proceder con la inserción de datos
     for table in insertion_order:
         df = dataframes.get(table)
         if df is None:
             print(f"⚠️  No se encontró DataFrame para la tabla: {table}")
             continue
         print(f"🔄 Insertando en tabla: {table}")
-        
         try:
+            if table in inspector.get_table_names():
+                print(f"✅ Tabla '{table}' ya existe en la base.")
+            else:
+                print(f"🆕 Tabla '{table}' no existe. Se creará automáticamente.")
+                
             if unique_columns and table in unique_columns:
                 unique_cols = unique_columns[table]
                 df = df.drop_duplicates(subset=unique_cols, keep='first')
                 print(f"🔍 Se eliminaron duplicados basados en las columnas: {unique_cols}")
             
-            # Usar to_sql para insertar el DataFrame
-            df.to_sql(table, engine, index=False, if_exists=if_exists)
+            # Insertar los datos en la tabla
+            df.to_sql(table, engine, if_exists=if_exists, index=False)
             print(f"✅ Datos insertados correctamente en la tabla '{table}'")
+        
         except SQLAlchemyError as e:
             print(f"❌ Error al insertar '{table}': {e}")
         except Exception as e:
             print(f"❌ Error inesperado al insertar '{table}': {e}")
+
+
+
 
 
 # ## Dibujar graficos

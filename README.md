@@ -36,6 +36,6 @@ Creado un directorio app
 
 Donde se encuentra el código consta de:
 
-main_tfm.py (programa principal)
-library_tfm_v0.py librerías generadas para el proyecto
+cia_data_loader_main.py (programa principal)
+cia_data_loader_library.py librerías generadas para el proyecto
 Veréis que hay un fichero __init__.py es el que permite que se pueda llamar a otros py sin errores 

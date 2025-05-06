@@ -204,15 +204,15 @@ for key, value in env_vars.items():
 # 
 # En este punto daremos los valores a las variables 
 
-# In[6]:
+# In[7]:
 
 
 if env_info.get("is_virtual") is False:
     path_file = r'C:\Users\MX0046001DC5030\files'    
 else:
     path_file = python_file
-clean_file(python_file,extensions=['.txt', '.csv'])   
-dataframes, list_id =load_files_in_dataframes(python_file, sep=',', extensions=['.txt', '.csv'])
+clean_file(path_file,extensions=['.txt', '.csv'])   
+dataframes, list_id =load_files_in_dataframes(path_file, sep=',', extensions=['.txt', '.csv'])
 
 # Identifica las dependecias
 graph = build_dependency_graph(dataframes)
