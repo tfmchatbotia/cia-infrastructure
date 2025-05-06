@@ -1,19 +1,39 @@
 services:
-  # Servicio de la aplicación Python (loader)
-  tfm_ai_data_loader:
+  tfm_ai_postgres:
+    build:
+      context: ./postgres_custom
+    container_name: tfm_ai_postgres_container
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    ports:
+      - "127.0.0.1:5432:5432"  # <-- Atado explícitamente al host
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./postgres_custom/estructura.sql:/docker-entrypoint-initdb.d/estructura.sql
+    networks:
+      - tfm_ai_network
+
+  tfm_ai_python:
     build:
       context: ./python_custom
-    container_name: tfm_ai_data_loader_container
+    container_name: tfm_ai_python_container
     volumes:
-      - .:/app              # Código de la app
-      - ./files:/files            # Nuevo: todo el directorio "file" montado dentro del contenedor
+      - .:/app
     working_dir: /app
-    command: >
-      /venv/bin/python ./app/cia_data_loader_main.py && tail -f /dev/null  # Ejecutar el script y luego mantener el contenedor activo
+    command: ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
+    depends_on:
+      - tfm_ai_postgres
+    ports:
+      - "127.0.0.1:8000:8000"  # <-- Atado explícitamente al host
     networks:
-      - cia-infrastructure_tfm_ai_network  # Red compartida con `cia-infrastructure`
+      - tfm_ai_network
 
-# Declaración de redes externas
 networks:
-  cia-infrastructure_tfm_ai_network:
-    external: true  # Usar la misma red externa que `cia-infrastructure`
+  tfm_ai_network:
+    driver: bridge
+    attachable: true
+
+volumes:
+  postgres_data:
