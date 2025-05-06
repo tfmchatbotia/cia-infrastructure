@@ -1,0 +1,1179 @@
+ El volumen de la unidad C es Windows
+ El n£mero de serie del volumen es: 8C48-2A92
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure
+
+06/05/2025  21:33    <DIR>          .
+26/04/2025  14:24    <DIR>          ..
+06/05/2025  16:25                72 .dockerignore
+06/05/2025  17:07               132 .env
+06/05/2025  16:25               321 .gitignore
+06/05/2025  21:33                 0 1.txt
+06/05/2025  19:06    <DIR>          app
+06/05/2025  19:33             1.073 docker-compose.yml
+06/05/2025  16:25    <DIR>          files
+26/04/2025  14:25    <DIR>          init_scripts
+26/04/2025  12:15               222 Makefile
+06/05/2025  18:28    <DIR>          postgres_custom
+06/05/2025  19:08    <DIR>          python_custom
+06/05/2025  16:25             1.206 README.md
+               7 archivos          3.026 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git
+
+06/05/2025  21:33    <DIR>          ..
+06/05/2025  17:04                54 COMMIT_EDITMSG
+06/05/2025  16:22               313 config
+26/04/2025  08:46                73 description
+06/05/2025  16:25               110 FETCH_HEAD
+06/05/2025  16:25                21 HEAD
+26/04/2025  08:46    <DIR>          hooks
+06/05/2025  17:04             2.387 index
+26/04/2025  08:46    <DIR>          info
+26/04/2025  09:18    <DIR>          logs
+06/05/2025  17:04    <DIR>          objects
+06/05/2025  16:25                41 ORIG_HEAD
+26/04/2025  09:18    <DIR>          refs
+               7 archivos          2.999 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\hooks
+
+26/04/2025  08:46    <DIR>          .
+26/04/2025  08:46               478 applypatch-msg.sample
+26/04/2025  08:46               896 commit-msg.sample
+26/04/2025  08:46             4.726 fsmonitor-watchman.sample
+26/04/2025  08:46               189 post-update.sample
+26/04/2025  08:46               424 pre-applypatch.sample
+26/04/2025  08:46             1.649 pre-commit.sample
+26/04/2025  08:46               416 pre-merge-commit.sample
+26/04/2025  08:46             1.374 pre-push.sample
+26/04/2025  08:46             4.898 pre-rebase.sample
+26/04/2025  08:46               544 pre-receive.sample
+26/04/2025  08:46             1.492 prepare-commit-msg.sample
+26/04/2025  08:46             2.783 push-to-checkout.sample
+26/04/2025  08:46             2.308 sendemail-validate.sample
+26/04/2025  08:46             3.650 update.sample
+              14 archivos         25.827 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\info
+
+26/04/2025  08:46    <DIR>          .
+26/04/2025  08:46               240 exclude
+               1 archivos            240 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\logs
+
+26/04/2025  09:18    <DIR>          .
+06/05/2025  17:04             4.057 HEAD
+26/04/2025  09:18    <DIR>          refs
+               1 archivos          4.057 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\logs\refs
+
+26/04/2025  09:18    <DIR>          .
+26/04/2025  09:18    <DIR>          ..
+26/04/2025  09:18    <DIR>          heads
+26/04/2025  09:18    <DIR>          remotes
+               0 archivos              0 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\logs\refs\heads
+
+26/04/2025  09:18    <DIR>          .
+26/04/2025  09:18    <DIR>          ..
+06/05/2025  17:04             3.343 main
+               1 archivos          3.343 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\logs\refs\remotes
+
+26/04/2025  09:18    <DIR>          .
+26/04/2025  09:18    <DIR>          ..
+26/04/2025  09:18    <DIR>          origin
+               0 archivos              0 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\logs\refs\remotes\origin
+
+26/04/2025  09:18    <DIR>          .
+26/04/2025  09:18    <DIR>          ..
+06/05/2025  16:51             2.410 main
+               1 archivos          2.410 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects
+
+06/05/2025  17:04    <DIR>          .
+27/04/2025  13:11    <DIR>          00
+06/05/2025  16:51    <DIR>          02
+26/04/2025  14:38    <DIR>          03
+28/04/2025  08:07    <DIR>          07
+06/05/2025  16:25    <DIR>          09
+06/05/2025  16:25    <DIR>          0a
+27/04/2025  11:52    <DIR>          0b
+03/05/2025  10:09    <DIR>          0d
+06/05/2025  16:25    <DIR>          13
+27/04/2025  11:54    <DIR>          14
+06/05/2025  16:25    <DIR>          15
+29/04/2025  12:20    <DIR>          18
+06/05/2025  16:25    <DIR>          1c
+06/05/2025  16:25    <DIR>          21
+06/05/2025  16:25    <DIR>          27
+06/05/2025  16:25    <DIR>          2a
+26/04/2025  09:18    <DIR>          2c
+03/05/2025  10:23    <DIR>          2e
+06/05/2025  16:25    <DIR>          30
+27/04/2025  11:54    <DIR>          35
+06/05/2025  16:25    <DIR>          37
+27/04/2025  12:31    <DIR>          38
+06/05/2025  16:25    <DIR>          39
+06/05/2025  16:25    <DIR>          3e
+06/05/2025  16:25    <DIR>          3f
+06/05/2025  16:25    <DIR>          42
+06/05/2025  16:25    <DIR>          44
+29/04/2025  12:22    <DIR>          46
+27/04/2025  12:31    <DIR>          47
+06/05/2025  16:34    <DIR>          48
+06/05/2025  16:25    <DIR>          4a
+29/04/2025  12:22    <DIR>          4b
+06/05/2025  17:04    <DIR>          4c
+26/04/2025  09:18    <DIR>          4e
+06/05/2025  16:25    <DIR>          4f
+06/05/2025  16:25    <DIR>          52
+06/05/2025  16:25    <DIR>          53
+06/05/2025  17:04    <DIR>          54
+06/05/2025  16:25    <DIR>          56
+06/05/2025  16:25    <DIR>          57
+06/05/2025  16:25    <DIR>          59
+06/05/2025  16:25    <DIR>          5b
+06/05/2025  16:25    <DIR>          61
+27/04/2025  13:14    <DIR>          62
+06/05/2025  16:25    <DIR>          63
+06/05/2025  16:25    <DIR>          69
+06/05/2025  16:40    <DIR>          6c
+06/05/2025  16:25    <DIR>          6d
+27/04/2025  11:54    <DIR>          6f
+06/05/2025  16:23    <DIR>          70
+06/05/2025  16:25    <DIR>          76
+27/04/2025  13:11    <DIR>          77
+06/05/2025  16:25    <DIR>          78
+06/05/2025  16:25    <DIR>          79
+26/04/2025  14:38    <DIR>          7a
+06/05/2025  16:25    <DIR>          7c
+06/05/2025  16:40    <DIR>          7e
+06/05/2025  16:51    <DIR>          83
+06/05/2025  16:25    <DIR>          84
+06/05/2025  16:50    <DIR>          8c
+06/05/2025  16:25    <DIR>          8d
+06/05/2025  16:25    <DIR>          8e
+26/04/2025  14:45    <DIR>          8f
+27/04/2025  17:26    <DIR>          90
+06/05/2025  16:25    <DIR>          93
+06/05/2025  16:25    <DIR>          96
+03/05/2025  10:08    <DIR>          99
+29/04/2025  12:20    <DIR>          9a
+27/04/2025  13:14    <DIR>          9e
+06/05/2025  16:25    <DIR>          9f
+27/04/2025  11:52    <DIR>          a0
+06/05/2025  16:25    <DIR>          a3
+06/05/2025  16:25    <DIR>          a8
+06/05/2025  16:25    <DIR>          ab
+06/05/2025  16:24    <DIR>          ac
+06/05/2025  16:24    <DIR>          ae
+06/05/2025  16:25    <DIR>          b0
+06/05/2025  16:25    <DIR>          b1
+06/05/2025  16:40    <DIR>          b2
+06/05/2025  16:25    <DIR>          b6
+27/04/2025  13:11    <DIR>          b8
+06/05/2025  16:25    <DIR>          ba
+06/05/2025  16:25    <DIR>          bf
+06/05/2025  16:25    <DIR>          c0
+06/05/2025  16:25    <DIR>          c3
+27/04/2025  11:52    <DIR>          c5
+03/05/2025  10:08    <DIR>          c7
+06/05/2025  16:25    <DIR>          cb
+06/05/2025  16:25    <DIR>          cc
+06/05/2025  16:25    <DIR>          ce
+06/05/2025  16:25    <DIR>          d2
+06/05/2025  16:25    <DIR>          d5
+26/04/2025  09:18    <DIR>          d9
+06/05/2025  16:25    <DIR>          db
+26/04/2025  14:45    <DIR>          dd
+06/05/2025  16:25    <DIR>          df
+06/05/2025  16:25    <DIR>          e0
+27/04/2025  17:26    <DIR>          e1
+06/05/2025  16:25    <DIR>          e3
+27/04/2025  11:58    <DIR>          e4
+26/04/2025  14:38    <DIR>          e6
+28/04/2025  08:07    <DIR>          e7
+06/05/2025  16:25    <DIR>          e8
+06/05/2025  16:25    <DIR>          e9
+06/05/2025  16:25    <DIR>          eb
+27/04/2025  13:14    <DIR>          ec
+26/04/2025  14:38    <DIR>          ee
+06/05/2025  16:25    <DIR>          f0
+29/04/2025  12:20    <DIR>          f1
+27/04/2025  11:58    <DIR>          f6
+06/05/2025  16:51    <DIR>          f7
+06/05/2025  16:25    <DIR>          f8
+06/05/2025  16:25    <DIR>          f9
+27/04/2025  11:52    <DIR>          fd
+06/05/2025  16:25    <DIR>          fe
+26/04/2025  08:46    <DIR>          info
+26/04/2025  08:46    <DIR>          pack
+               0 archivos              0 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\00
+
+27/04/2025  13:11    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  16:25                84 27ca51149dbec37fe0429da0e5e35aebeff495
+               1 archivos             84 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\02
+
+06/05/2025  16:51    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  16:51               132 fc4dc9694f0c9f3a2e1523ed8e9b6918b156ba
+               1 archivos            132 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\03
+
+26/04/2025  14:38    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+26/04/2025  14:38             4.609 88eb9f342a4fbde62530941be9ad3f0b5c181b
+               1 archivos          4.609 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\07
+
+28/04/2025  08:07    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+28/04/2025  08:07               319 ef5562d1e839547f682dd7271bebf7a6b19498
+               1 archivos            319 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\09
+
+06/05/2025  16:25    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  16:25             7.153 53ebc686124309dfb3b63ad0438e79995ab831
+               1 archivos          7.153 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\0a
+
+06/05/2025  16:25    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  16:25             1.469 6933c0e47071c42eb0fe337147e662dadf44f4
+               1 archivos          1.469 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\0b
+
+27/04/2025  11:52    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  16:25               532 1cdcca706e3ae6d5bfe6db557b8ab8c798bb54
+               1 archivos            532 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\0d
+
+03/05/2025  10:09    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+03/05/2025  10:09               288 4c6776c5e5c93441d8583a903ecd13a90cfd5b
+26/04/2025  14:45                52 fccf161cfa9aebc5b335f2a3374b38b0736632
+               2 archivos            340 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\13
+
+06/05/2025  16:25    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+27/04/2025  13:14               177 0b78735dcb42162cdfdae2a4512b51e65a669f
+06/05/2025  16:25               188 783b2b25f30975032fd221b0922be5e549e002
+               2 archivos            365 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\14
+
+27/04/2025  11:54    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+27/04/2025  11:54                95 c80267b123ace53ec2953f2e43ce5cafb3c34d
+               1 archivos             95 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\15
+
+06/05/2025  16:25    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  16:25            24.382 c1784ad618a4f92cbe40ee705a09a3aad64cc3
+06/05/2025  16:25               439 eaddf0b1bf77aba6e08f627d9277ea88de5e6f
+               2 archivos         24.821 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\18
+
+29/04/2025  12:20    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+29/04/2025  12:20               524 dab13f5d6e66d843b017c2329d37d960e67656
+               1 archivos            524 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\1c
+
+06/05/2025  16:25    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  16:25               146 9391b03f2804b51c22a5ca4462025c4f43cad9
+               1 archivos            146 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\21
+
+06/05/2025  16:25    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  16:25               223 f3fb29e118da9f7be114100acc1b33b4e3ed72
+               1 archivos            223 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\27
+
+06/05/2025  16:25    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  16:25               202 40b44b2b6d3db9288491e19de096d12b558cfe
+               1 archivos            202 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\2a
+
+06/05/2025  16:25    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  16:25             9.680 91bee113703b74a658b81f2130b5d2ee189037
+06/05/2025  16:25                73 dad3f3eb34278540555ac2ff5d0c8781fe1878
+               2 archivos          9.753 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\2c
+
+26/04/2025  09:18    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+26/04/2025  09:18               184 ebdeea968893737a3a988d4ef220b0b42c94ac
+               1 archivos            184 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\2e
+
+03/05/2025  10:23    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  16:25               218 12f4b6897d522ed548d77bc4fdfe1d6bfbd287
+03/05/2025  10:23               288 2cccb64bf5f33c05a4daf3185e42df0d6c332e
+               2 archivos            506 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\30
+
+06/05/2025  16:25    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  16:25                83 adcc70e1a97466dba5439c8b30f368408073fb
+               1 archivos             83 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\35
+
+27/04/2025  11:54    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+27/04/2025  11:54               124 a1c7d6ecf7162f2e46e1803733a19b65e1a983
+               1 archivos            124 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\37
+
+06/05/2025  16:25    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  16:25            16.589 0b6f61399d88bd521f97939cfa531601d65990
+26/04/2025  14:38                96 5ebbf3eaea1c23346cce43872ab1cb578224d0
+26/04/2025  14:38               207 9b502d428f51eaa7f0866414f1be89dcc6225e
+06/05/2025  16:25               148 a8a98855b812d0111b9885749e9c3b2aa1b2c9
+               4 archivos         17.040 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\38
+
+27/04/2025  12:31    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+27/04/2025  12:31               176 ae916f6b738dbb5fef58b6c245c84eee517a11
+               1 archivos            176 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\39
+
+06/05/2025  16:25    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+26/04/2025  14:38               333 8297196dcc94d48f7237700548a0533b94118f
+06/05/2025  16:25               111 c8bc1a0f29b775e63fb2c384162a46830e63f3
+               2 archivos            444 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\3e
+
+06/05/2025  16:25    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  16:25                72 fc205cac7b36098d7f14521c8d19dc12461d9d
+               1 archivos             72 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\3f
+
+06/05/2025  16:25    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  16:25                48 3ae1345f2e6d040c1616d5b93b1e9c277f9f97
+06/05/2025  16:25               664 89e781917b74882c8bd9e50850a0d6d5a08e49
+               2 archivos            712 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\42
+
+06/05/2025  16:25    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  16:25               666 39a79071b4a14dace13e777040d37293b7d9d5
+06/05/2025  16:25            24.879 94ff8ebf8116b14719fdefebbcab728c7a72ff
+               2 archivos         25.545 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\44
+
+06/05/2025  16:25    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  16:25               287 5558b18ff68f68fc80a4c3b37b6c44229ae982
+               1 archivos            287 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\46
+
+29/04/2025  12:22    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+29/04/2025  12:22               197 71e00d81cf12bf839b24db69de7f23be9a0ed1
+28/04/2025  08:07               193 829f6e3859694fce19b91be0351a1d030aec85
+               2 archivos            390 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\47
+
+27/04/2025  12:31    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+27/04/2025  12:31               320 f6250052f5ea5126b72fd0dca39bf10579835d
+               1 archivos            320 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\48
+
+06/05/2025  16:34    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  16:50               393 26b6ed1a91ffa801aa7aeb7e1b920435363c88
+               1 archivos            393 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\4a
+
+06/05/2025  16:25    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  16:25               172 009a381d3d3e530cd7b17c4372ef06d0ae8559
+               1 archivos            172 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\4b
+
+29/04/2025  12:22    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+27/04/2025  11:59               240 28b4115ba1e1860c4120a0c982b3577fdc8738
+29/04/2025  12:22               124 601700975b6396cb129a87b0c0a6a026bd2d7e
+26/04/2025  09:05                15 825dc642cb6eb9a060e54bf8d69288fbee4904
+               3 archivos            379 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\4c
+
+06/05/2025  17:04    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  17:04               314 16461c18e5cbd4091b530e860711a39a39e004
+               1 archivos            314 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\4e
+
+26/04/2025  09:18    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+26/04/2025  09:18               162 481c191b14c7c580ecf2c08cb0e58bc2c7499b
+               1 archivos            162 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\4f
+
+06/05/2025  16:25    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  16:25               324 9122f39a692ca92ad031d5f7f51e395d162626
+06/05/2025  16:25               155 c11e4b825c655e2786a22f87e5cb2210b199f0
+               2 archivos            479 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\52
+
+06/05/2025  16:25    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  16:25               283 d9c4f9a78a108f374a2d786d9993ff2fb5eafd
+               1 archivos            283 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\53
+
+06/05/2025  16:25    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  16:25            12.027 4bedf4fe1c5a55388c6b87b8763cc127590e72
+03/05/2025  10:09               192 8390300cd728216e2efd1e55879d062718217d
+               2 archivos         12.219 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\54
+
+06/05/2025  17:04    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+26/04/2025  14:38               161 57f983af7caf89f57892946c44454b6e293214
+06/05/2025  17:04               199 63e3bb95609e5fc6d469cc1b209aafda74e9b7
+               2 archivos            360 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\56
+
+06/05/2025  16:25    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  16:25               365 992940407ec0f6f5874b409a0cdccd39405c3d
+               1 archivos            365 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\57
+
+06/05/2025  16:25    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+27/04/2025  13:13               240 9ca52a006c5504e05b78e8232a1092a53a71f4
+06/05/2025  16:25             6.003 c32357f7e5636d2b9d6c17e1db4807f2184ecf
+               2 archivos          6.243 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\59
+
+06/05/2025  16:25    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  16:25             1.771 0a88fdb7896e9cbac77edf2a4575eeefac6047
+27/04/2025  11:58               848 1d824d2cc8a6155adb32d1316c06fd061ff59b
+               2 archivos          2.619 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\5b
+
+06/05/2025  16:25    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+29/04/2025  12:22                96 0c0299fd1abfd302bd6d1c340ae4654c55cadd
+06/05/2025  16:25             4.975 0ed5e369746b202580821216ba3ab87d5c88de
+               2 archivos          5.071 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\61
+
+06/05/2025  16:25    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  16:25                89 4752a867228094b431e641849ad3acf179e996
+               1 archivos             89 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\62
+
+27/04/2025  13:14    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+27/04/2025  13:14               319 aecbf6d8dbc24530bca9f3c51f2dd87764f0ee
+               1 archivos            319 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\63
+
+06/05/2025  16:25    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  16:25            38.406 06774b6624345203c6b3a0aed078bd47154dc6
+               1 archivos         38.406 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\69
+
+06/05/2025  16:25    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+26/04/2025  09:18               231 d21240f84d2b33a78438a9d721549d10897714
+29/04/2025  12:22               261 f9eeb959128297220f545e83fc270feed01a79
+06/05/2025  16:25               136 fdd1edaf276c330c0c75b748c036d0c4a720da
+               3 archivos            628 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\6c
+
+06/05/2025  16:40    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  17:04               451 1a7ce0c88c7dab379d6c0d63279ebf5c55ced5
+06/05/2025  16:40               351 cf329a786519837212314aff88f79f0322eb9a
+06/05/2025  16:25               225 feb6be7a169bf1d803dbab196bc9e7f958a8e4
+               3 archivos          1.027 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\6d
+
+06/05/2025  16:25    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  16:25               156 f3506c99fe1310007927b12a5a32a16ee2135f
+               1 archivos            156 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\6f
+
+27/04/2025  11:54    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+27/04/2025  11:54               320 ff160843e81f599a5389f4e71da5ece0def1c0
+               1 archivos            320 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\70
+
+06/05/2025  16:23    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  16:23         1.644.580 84de8eb3d3a0b10905d3e4cddc0755ab75bf7f
+               1 archivos      1.644.580 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\76
+
+06/05/2025  16:25    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  16:25            35.802 c004efcb226875bda531b1b875c0f71b0d77a0
+               1 archivos         35.802 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\77
+
+27/04/2025  13:11    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+29/04/2025  12:20               391 571e561cb3d8c8cf2e3e9d15380b1fa9db534b
+               1 archivos            391 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\78
+
+06/05/2025  16:25    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  16:25               117 cbd5e78468a9c33fdc591c601e3e4d6f3abc16
+               1 archivos            117 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\79
+
+06/05/2025  16:25    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+27/04/2025  17:26               124 33602fed89717b3c275832cd783c70b878145d
+06/05/2025  16:25               181 bd3d64afc6630c8354270644c3020128c4658b
+06/05/2025  16:25               283 f1bfc2b1012c8f97a804a8d8fa3b9394582ce3
+               3 archivos            588 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\7a
+
+26/04/2025  14:38    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  16:25               142 f03963329d4872e83cb80e7e0dcc7be056b659
+               1 archivos            142 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\7c
+
+06/05/2025  16:25    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  16:25             5.299 5d3751cc2bbb4cea22d3cddb4a1488573b8763
+               1 archivos          5.299 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\7e
+
+06/05/2025  16:40    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  16:25             5.087 1ce0bf0f458612ee1f9dcd09b2972a8a563b50
+06/05/2025  16:40               174 5a20197ba52c2e59852f9a626a4b16aabdfffb
+06/05/2025  16:25                84 e77de05ffe2a386e16027fb2e54f1f1de691fe
+               3 archivos          5.345 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\83
+
+06/05/2025  16:51    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  16:51               314 4ecb6e61e462af6186290cebba64fd8c36866f
+               1 archivos            314 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\84
+
+06/05/2025  16:25    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  16:24               143 5a448dd69f4b08297d21acc8b9795ca2fb1286
+06/05/2025  16:25               230 f3d25ecf389357088bbcdbafaf0209aace13d1
+               2 archivos            373 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\8c
+
+06/05/2025  16:50    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  16:50               236 4bf990bbf662a3547752c630abffd077b63d17
+27/04/2025  11:54               230 552506d4d007c628b7ae9e7d7ad08bd36884f8
+               2 archivos            466 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\8d
+
+06/05/2025  16:25    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  16:25            17.517 4eac6f313173ddc1663d08ebd383f8dbbb2296
+06/05/2025  16:25               147 5c4629f38af227827548eda894ec34f5f2905d
+               2 archivos         17.664 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\8e
+
+06/05/2025  16:25    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  16:25             2.596 d15ec401279c249701d9638b8989ffa8b39a8c
+               1 archivos          2.596 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\8f
+
+26/04/2025  14:45    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+26/04/2025  14:45               290 507a561e3c8bfaef1ca51df8785d98d1306d36
+               1 archivos            290 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\90
+
+27/04/2025  17:26    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+27/04/2025  17:26               319 49e5385c20e6de267d2f0896f91692ab6402ce
+               1 archivos            319 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\93
+
+06/05/2025  16:25    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  16:25               662 fbb8639bba8ac1c865e578e191e09ed652a085
+               1 archivos            662 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\96
+
+06/05/2025  16:25    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  16:25               132 041cfbb2c05bec2490768817a32cea48fa9fa7
+06/05/2025  16:25               159 80126d4eabd040fe5b1cde28b92544622a89be
+               2 archivos            291 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\99
+
+03/05/2025  10:08    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+03/05/2025  10:08               245 7d51c26b70fed277eaba77b7bba1a97060f5b1
+               1 archivos            245 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\9a
+
+29/04/2025  12:20    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+29/04/2025  12:20               307 45c81a595bdc9affdd533a65974522f6a0ae37
+               1 archivos            307 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\9e
+
+27/04/2025  13:14    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  16:25                96 c4d6ce72272caf5f70e0f1daee197f5d0e857b
+               1 archivos             96 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\9f
+
+06/05/2025  16:25    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+26/04/2025  14:45                93 5a6ea77284d40f6a5ec6fbbbb3674801d7c46b
+29/04/2025  12:20                85 9fee25cce59109c1baa2ad16cbe4fd6609da55
+06/05/2025  16:25             5.857 e6050768697492825ad74add567ecb25c77c43
+               3 archivos          6.035 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\a0
+
+27/04/2025  11:52    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+27/04/2025  11:52               726 39882889ea2dc8d92834a781f8e6c5a81633a5
+               1 archivos            726 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\a3
+
+06/05/2025  16:25    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  16:25               289 e58a1f9508ec740c13cd51a7229ae3acec6aff
+               1 archivos            289 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\a8
+
+06/05/2025  16:25    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  16:25            53.257 12eecff64cfe009ecdedd77fa1204aab41a18c
+               1 archivos         53.257 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\ab
+
+06/05/2025  16:25    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  16:25               314 d8c954d1f8da7f82b9983d54992bd5a1f94287
+               1 archivos            314 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\ac
+
+06/05/2025  16:24    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  16:24               288 8fbadf3f1ca65ce486d29be10d4a1c0c2d6d5b
+               1 archivos            288 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\ae
+
+06/05/2025  16:24    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  16:24               162 bcfddb5993319029fccbdd54460af4145ed025
+               1 archivos            162 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\b0
+
+06/05/2025  16:25    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  16:25             9.373 42529e338fe855d9302afb0f665674496a1127
+               1 archivos          9.373 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\b1
+
+06/05/2025  16:25    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  16:25               669 7f7616050596f3f9df41f87bef2bf1ca560243
+               1 archivos            669 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\b2
+
+06/05/2025  16:40    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  16:40                95 832c17622b345489b340bc0e939990ec1a6bb9
+               1 archivos             95 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\b6
+
+06/05/2025  16:25    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  16:25               412 3970418246f674fb4747bc3c6035159411b939
+               1 archivos            412 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\b8
+
+27/04/2025  13:11    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+27/04/2025  11:58               320 419d3c2e3045b49b19dcd628dd4c343d8c7780
+27/04/2025  13:11             5.552 be43eb0a77c341ea729407f803f67760dc93c5
+               2 archivos          5.872 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\ba
+
+06/05/2025  16:25    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  16:25                80 7742fcaaaa1a06e3147d0a6218742ce7b8dd5a
+06/05/2025  16:25               187 ed722cdecd0f0ef90e11f1adbf31f7e7bce994
+               2 archivos            267 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\bf
+
+06/05/2025  16:25    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  16:25            11.704 35e43aefae5847fa1280a3af3b41008f7911ca
+27/04/2025  11:52                44 6f63adffff4c130f7e52da429a3b69a2acd6e4
+               2 archivos         11.748 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\c0
+
+06/05/2025  16:25    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  16:25               287 3525bae35074eb0537a5289686a1ba39d3cdb6
+06/05/2025  16:25               569 a9b1c331b706b702bedbdc930bbe356da6555f
+               2 archivos            856 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\c3
+
+06/05/2025  16:25    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  16:25               128 1ec6eb8cf3ee009029f372dfdb378b2160dcd2
+06/05/2025  16:25               395 69e580307f1ae38b0d9d5a926ea8e04e6f5103
+               2 archivos            523 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\c5
+
+27/04/2025  11:52    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+27/04/2025  11:52               260 67577a4ab3cbe14330370b7413e95504c6eac9
+               1 archivos            260 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\c7
+
+03/05/2025  10:08    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+03/05/2025  10:08               102 245035b4b183ec0385fbc37b8f97f65b6e633b
+               1 archivos            102 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\cb
+
+06/05/2025  16:25    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  16:25               411 5bbf099522827b082760ecebe5b7ff8fd94a06
+               1 archivos            411 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\cc
+
+06/05/2025  16:25    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  16:25               288 fb73c56753de65ebe0f9ab9103c17df22ec21d
+               1 archivos            288 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\ce
+
+06/05/2025  16:25    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  16:25                95 9d80a3dd0a6304666f665b0ebc7f921f56dddd
+               1 archivos             95 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\d2
+
+06/05/2025  16:25    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  16:25             1.463 4957ae46d0ae604a04ced9f43dfea2a89427b0
+               1 archivos          1.463 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\d5
+
+06/05/2025  16:25    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  16:28               425 1829c0144616ec97253c6199b0714b72d7ee6a
+               1 archivos            425 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\d9
+
+26/04/2025  09:18    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+26/04/2025  09:18                61 fab576ca45c1b738917265a6d79f8af8c01121
+               1 archivos             61 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\db
+
+06/05/2025  16:25    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  16:25               288 835bd6719a2caec2536264a574b66d08f5007e
+               1 archivos            288 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\dd
+
+26/04/2025  14:45    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+26/04/2025  14:45               179 3623ec05f4e4ffd30314bb8df96336dfb13bba
+               1 archivos            179 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\df
+
+06/05/2025  16:25    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  16:25                63 45aaa8f796066c40691339f2b049c36bf9d4e0
+               1 archivos             63 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\e0
+
+06/05/2025  16:25    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  16:25               212 f1fad1a9a022ac51edbb2424a7f7a86442dc88
+06/05/2025  16:25               163 f270eef3cdbaa314b32120a874241ae581f620
+               2 archivos            375 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\e1
+
+27/04/2025  17:26    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+27/04/2025  17:26               180 ccee696f09d7858bf8bd5ada415231c856ee10
+               1 archivos            180 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\e3
+
+06/05/2025  16:25    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  16:25               144 5b31f6ccf8258a0999831cae66d6e2c09f76c1
+27/04/2025  17:26               586 b602221aba5ebee152001424900d0b8bb5f7d5
+               2 archivos            730 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\e4
+
+27/04/2025  11:58    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+26/04/2025  09:18                36 08f6c6bf8df3f74c8f967e8a988c0a2200c0c6
+27/04/2025  11:58               291 4bad042919a17fa1d43e509aeab66d970a8beb
+               2 archivos            327 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\e6
+
+26/04/2025  14:38    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  16:25                15 9de29bb2d1d6434b8b29ae775ad8c2e48c5391
+               1 archivos             15 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\e7
+
+28/04/2025  08:07    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+28/04/2025  08:07               528 4b9c81d2311e228ad1d531c0c475cafba78b50
+               1 archivos            528 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\e8
+
+06/05/2025  16:25    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  16:25         1.595.939 dedd773216152114728157375c2f161b3574a3
+               1 archivos      1.595.939 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\e9
+
+06/05/2025  16:25    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  16:25             2.595 0c5bb49c844f01e40eff65f0fcdce314816bb7
+               1 archivos          2.595 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\eb
+
+06/05/2025  16:25    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  16:25            13.635 6433ee93808e06e3577e5760b12eabdf98a4dc
+               1 archivos         13.635 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\ec
+
+27/04/2025  13:14    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+27/04/2025  13:14               192 0f20d40f226adf45a50b51cca76741c73ef99f
+               1 archivos            192 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\ee
+
+26/04/2025  14:38    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+26/04/2025  14:38               141 a272820cfd85a1e92b0086a78d27442ed0bd6b
+               1 archivos            141 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\f0
+
+06/05/2025  16:25    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+03/05/2025  10:23               191 7d15d5ef86d0acbc165adf11c34fed04416ebf
+06/05/2025  16:25               171 9c0e59bf3daceceb96540ab1219b26c67bb8ab
+               2 archivos            362 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\f1
+
+29/04/2025  12:20    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+29/04/2025  12:20               688 fa9066318e35fc6d46bac1644299901afca8f6
+               1 archivos            688 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\f6
+
+27/04/2025  11:58    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+27/04/2025  11:58               213 fc45d625aca06ffd9abf10571be7c0b699928e
+26/04/2025  09:18               150 fd030ae65252314dd3afde660371d1978dd8ef
+               2 archivos            363 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\f7
+
+06/05/2025  16:51    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  16:51               180 c1c6609b320a3402f89a0f73c010559391a078
+               1 archivos            180 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\f8
+
+06/05/2025  16:25    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  16:25               127 b401201c9f1fcec64c3f386a59d42ec44833fe
+               1 archivos            127 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\f9
+
+06/05/2025  16:25    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  16:25             5.451 9daae49da3c27f1dd14893a3282468de379cac
+               1 archivos          5.451 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\fd
+
+27/04/2025  11:52    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+27/04/2025  13:11               346 9d668f6ab74fa86ca2800089f7f29715802483
+               1 archivos            346 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\fe
+
+06/05/2025  16:25    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+06/05/2025  16:25            12.031 46c6f91d5bf2ef23057f9f92c6861b3a455bd6
+06/05/2025  16:25               188 ec12d00ad3a7e31234be0ceef8af659af172c8
+               2 archivos         12.219 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\info
+
+26/04/2025  08:46    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+               0 archivos              0 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\objects\pack
+
+26/04/2025  08:46    <DIR>          .
+06/05/2025  17:04    <DIR>          ..
+               0 archivos              0 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\refs
+
+26/04/2025  09:18    <DIR>          .
+06/05/2025  17:04    <DIR>          heads
+26/04/2025  09:18    <DIR>          remotes
+26/04/2025  08:46    <DIR>          tags
+               0 archivos              0 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\refs\heads
+
+06/05/2025  17:04    <DIR>          .
+26/04/2025  09:18    <DIR>          ..
+06/05/2025  17:04                41 main
+               1 archivos             41 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\refs\remotes
+
+26/04/2025  09:18    <DIR>          .
+26/04/2025  09:18    <DIR>          ..
+06/05/2025  16:51    <DIR>          origin
+               0 archivos              0 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\refs\remotes\origin
+
+06/05/2025  16:51    <DIR>          .
+26/04/2025  09:18    <DIR>          ..
+06/05/2025  16:51                41 main
+               1 archivos             41 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\.git\refs\tags
+
+26/04/2025  08:46    <DIR>          .
+26/04/2025  09:18    <DIR>          ..
+               0 archivos              0 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\app
+
+06/05/2025  19:06    <DIR>          .
+06/05/2025  21:33    <DIR>          ..
+06/05/2025  21:19             1.008 main.py
+29/04/2025  12:13    <DIR>          __pycache__
+               1 archivos          1.008 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\app\__pycache__
+
+29/04/2025  12:13    <DIR>          .
+06/05/2025  19:06    <DIR>          ..
+28/04/2025  08:14             1.260 database_test.cpython-311.pyc
+29/04/2025  12:13             2.225 main.cpython-311.pyc
+29/04/2025  11:40               129 __init__.cpython-311.pyc
+               3 archivos          3.614 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\files
+
+06/05/2025  16:25    <DIR>          .
+06/05/2025  21:33    <DIR>          ..
+06/05/2025  16:25               183 agency.txt
+06/05/2025  16:25               248 calendar.txt
+06/05/2025  16:25             1.043 calendar_dates.txt
+06/05/2025  16:25                75 fare_attributes.txt
+06/05/2025  16:25                58 fare_rules.txt
+06/05/2025  16:25               175 feed_info.txt
+06/05/2025  16:25            47.429 frequencies.txt
+06/05/2025  16:25             1.325 routes.txt
+06/05/2025  16:25         4.548.831 shapes.txt
+06/05/2025  16:25            63.129 stops.txt
+06/05/2025  16:25           155.650 stop_times.txt
+06/05/2025  16:25            14.207 trips.txt
+              12 archivos      4.832.353 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\init_scripts
+
+26/04/2025  14:25    <DIR>          .
+06/05/2025  21:33    <DIR>          ..
+               0 archivos              0 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\postgres_custom
+
+06/05/2025  18:28    <DIR>          .
+06/05/2025  21:33    <DIR>          ..
+06/05/2025  18:08               377 Dockerfile
+18/04/2025  17:06            23.053 estructura.sql
+06/05/2025  16:25         4.880.465 full_dump-mydb-202505052022.sql
+               3 archivos      4.903.895 bytes
+
+ Directorio de C:\Users\MX0046001DC5030\TFM_AI_2025\DEFINITIVO\cia-infrastructure\python_custom
+
+06/05/2025  19:08    <DIR>          .
+06/05/2025  21:33    <DIR>          ..
+06/05/2025  19:34               369 Dockerfile
+06/05/2025  19:37                81 requirements.txt
+               2 archivos            450 bytes
+
+     Total de archivos en la lista:
+             215 archivos     13.394.759 bytes
+             406 dirs  100.055.048.192 bytes libres

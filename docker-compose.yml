@@ -1,5 +1,6 @@
 services:
   tfm_ai_postgres:
+    image: postgres:16
     build:
       context: ./postgres_custom
     container_name: tfm_ai_postgres_container
@@ -8,7 +9,7 @@ services:
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
       POSTGRES_DB: ${POSTGRES_DB}
     ports:
-      - "127.0.0.1:5432:5432"  # <-- Atado explícitamente al host
+      - "127.0.0.1:5432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
       - ./postgres_custom/estructura.sql:/docker-entrypoint-initdb.d/estructura.sql
@@ -20,13 +21,14 @@ services:
       context: ./python_custom
     container_name: tfm_ai_python_container
     volumes:
-      - .:/app
+      - ./app:/app
+      - .env:/app/.env  # Asegúrate de que esta ruta es correcta
     working_dir: /app
-    command: ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
+    command: ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
     depends_on:
       - tfm_ai_postgres
     ports:
-      - "127.0.0.1:8000:8000"  # <-- Atado explícitamente al host
+      - "127.0.0.1:8000:8000"
     networks:
       - tfm_ai_network
 
@@ -37,3 +39,4 @@ networks:
 
 volumes:
   postgres_data:
+    driver: local
