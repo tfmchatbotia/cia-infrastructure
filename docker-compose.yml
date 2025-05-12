@@ -1,3 +1,5 @@
+
+
 services:
   tfm_ai_postgres:
     image: postgres:16
@@ -22,8 +24,10 @@ services:
     container_name: tfm_ai_python_container
     volumes:
       - ./app:/app
-      - .env:/app/.env  # Asegúrate de que esta ruta es correcta
+      - ./.env:/app/.env  # MONTA explícitamente el .env en el contenedor
     working_dir: /app
+    env_file:
+      - .env
     command: ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
     depends_on:
       - tfm_ai_postgres

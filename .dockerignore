@@ -1,4 +1,14 @@
-# No ignores los archivos que necesitas
+# Ignora todo lo innecesario
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+*.log
+*.env.*  # Ignora variantes como .env.local, .env.dev si existen
+
+# No ignores los que necesitas explícitamente
+!.env
 !.dockerignore
 !.gitignore
-

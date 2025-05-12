@@ -13,9 +13,9 @@ POSTGRES_DB=mydb ## nombre del esquema
 POSTGRES_HOST=tfm_ai_postgres_container ##nombre del contenedor que contiene la base de datos
 
 PYTHON_FILE =../files ## Ruta donde se encuentran los ficheros a procesar
+3. Crea una replica del mismo en python_custom
 
-
-3. Ejecuta:
+4. Ejecuta:
 
 
 ```bash

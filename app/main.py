@@ -1,3 +1,21 @@
+from fastapi import FastAPI, Request
+import databases
+import os
+from dotenv import load_dotenv
+
+# Cargar variables de entorno desde el archivo .env
+load_dotenv()
+
+# Convertir todas las variables de entorno a minúsculas
+env_vars = {key.lower(): value for key, value in os.environ.items()}
+
+# Obtener la URL de la base de datos utilizando las variables de entorno en minúsculas
+DATABASE_URL = f"postgresql://{env_vars.get('postgres_user')}:{env_vars.get('postgres_password')}@{env_vars.get('postgres_host')}:{5432}/{env_vars.get('postgres_db')}"
+print('DATABASE_URL', DATABASE_URL)
+
+# Inicializar la base de datos con la URL generada
+database = databases.Database(DATABASE_URL)
+
 from fastapi import FastAPI
 import asyncpg
 import os
@@ -36,7 +54,3 @@ async def read_root():
         return {"message": "Database connection successful", "result": [dict(r) for r in result]}
     except Exception as e:
         return {"error": str(e)}
-
-
-
-
