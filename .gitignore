@@ -14,8 +14,8 @@ ENV/
 VENV/
 
 # Archivos de configuración
-*.env
-*.env.*
+# *.env
+# *.env.*
 
 # Docker
 **/data/
