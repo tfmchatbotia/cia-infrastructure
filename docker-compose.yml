@@ -14,7 +14,8 @@ services:
       - "127.0.0.1:5432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
-      - ./postgres_custom/estructura.sql:/docker-entrypoint-initdb.d/estructura.sql
+      # - ./postgres_custom/estructure.sql:/docker-entrypoint-initdb.d/estructure.sql
+      - ./postgres_custom/estructure_full_data.sql:/docker-entrypoint-initdb.d/estructure_full_data.sql
     networks:
       - tfm_ai_network
 

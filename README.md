@@ -1,4 +1,29 @@
 
+Dada esta configuración solo hay que comentar o descomentar la linea de la bbdd para que carge los esquemas los esquemas + datos 
+
+  tfm_ai_postgres:
+    image: postgres:16
+    build:
+      context: ./postgres_custom
+    container_name: tfm_ai_postgres_container
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    ports:
+      - "127.0.0.1:5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      # - ./postgres_custom/estructure.sql:/docker-entrypoint-initdb.d/estructure.sql  # SOLO ESQUEMA
+      - ./postgres_custom/estructure_full_data.sql:/docker-entrypoint-initdb.d/estructure_full_data.sql # ESQUEMA + DATOS
+    networks:
+      - tfm_ai_network
+
+
+
+
+
+
 ## Cómo usar
 
 1. Clona el repositorio.
