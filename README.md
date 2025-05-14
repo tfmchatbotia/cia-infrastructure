@@ -47,8 +47,6 @@ PYTHON_FILE =../files ## Ruta donde se encuentran los ficheros a procesar
 docker-compose up -d
 
 
-
-
 docker-compose que contiene el codigo python para la carga de ficheros
 
 Creado un directorio python_custom
@@ -64,3 +62,9 @@ Donde se encuentra el código consta de:
 cia_data_loader_main.py (programa principal)
 cia_data_loader_library.py librerías generadas para el proyecto
 Veréis que hay un fichero __init__.py es el que permite que se pueda llamar a otros py sin errores 
+
+
+el codigo de la api se llama a traves de  127.0.0.1  
+.- http://127.0.0.1:8000/docs documentación del servicio y se puede probar
+
+

@@ -1,50 +1,27 @@
 from fastapi import FastAPI, Request
-import databases
-import os
-from dotenv import load_dotenv
-
-# Cargar variables de entorno desde el archivo .env
-load_dotenv()
-
-# Convertir todas las variables de entorno a minúsculas
-env_vars = {key.lower(): value for key, value in os.environ.items()}
-
-# Obtener la URL de la base de datos utilizando las variables de entorno en minúsculas
-DATABASE_URL = f"postgresql://{env_vars.get('postgres_user')}:{env_vars.get('postgres_password')}@{env_vars.get('postgres_host')}:{5432}/{env_vars.get('postgres_db')}"
-print('DATABASE_URL', DATABASE_URL)
-
-# Inicializar la base de datos con la URL generada
-database = databases.Database(DATABASE_URL)
-
-from fastapi import FastAPI
+from pydantic import BaseModel
 import asyncpg
 import os
-from dotenv import load_dotenv
-# Permite cargar configuraciones sensibles (como claves API, contraseñas, nombres de usuario, URLs) desde un archivo .env, sin tener que codificarlas directamente en tu script.
 from dotenv import dotenv_values
 
-
-# Cargar variables del entorno desde .env
-
+# Cargar variables desde .env
 env_vars = dotenv_values(".env")
 
-# Obtener todas las variables de entorno cargadas
-# Asignar cada variable como una variable Python, pero con nombre en minúsculas
-# De esta forma no tengo que cargarlas manualmente 
+# Asignar variables a globals
 for key, value in env_vars.items():
-    globals()[key.lower()] = value 
+    globals()[key.lower()] = value
     print(f'{key.lower()}={value}')
 
-
-
-
-    
-# Construir la URL de conexión
+# URL de conexión
 db_url = f"postgresql://{postgres_user}:{postgres_password}@{postgres_host}:{5432}/{postgres_db}"
-print (db_url)
+print("db_url:", db_url)
+
 app = FastAPI()
 
-# Endpoint raíz que hace SELECT 1
+# Modelo para recibir SQL desde el cliente
+class SQLQuery(BaseModel):
+    query: str
+
 @app.get("/")
 async def read_root():
     try:
@@ -54,3 +31,13 @@ async def read_root():
         return {"message": "Database connection successful", "result": [dict(r) for r in result]}
     except Exception as e:
         return {"error": str(e)}
+
+@app.post("/execute-sql")
+async def execute_sql(query_data: SQLQuery):
+    try:
+        conn = await asyncpg.connect(db_url)
+        result = await conn.fetch(query_data.query)
+        await conn.close()
+        return {"success": True, "result": [dict(r) for r in result]}
+    except Exception as e:
+        return {"success": False, "error": str(e)}
