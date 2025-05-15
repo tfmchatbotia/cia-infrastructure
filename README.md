@@ -53,7 +53,9 @@ el codigo de la api se llama a traves de  127.0.0.1
 
  Tiene dos metodos un get y otro post es este último se puede ejecutar cualquier consulta sql 
 
+En esta URL esta el Chat 
 
+.- http://127.0.0.1:9000 Pagina del Chat con logos Ramon Areces y Universidad de Alcala Simula la llamada esta el codigo comentado la  llamada real 
 
 
 Sobre la base de datos

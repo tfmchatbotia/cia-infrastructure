@@ -1,19 +1,23 @@
+# Usa imagen base oficial de Python
 FROM python:3.11-slim
 
-# Definir el directorio de trabajo
+# Establece directorio de trabajo en la imagen
 WORKDIR /app
 
-# Copiar primero requirements y .env antes del resto del código
-COPY requirements.txt ./
-COPY .env .env
+# Instala Supervisor
+RUN apt-get update && apt-get install -y supervisor
 
-# Instalar dependencias
-RUN pip install --no-cache-dir -r requirements.txt
+# Copia todo lo necesario desde el contexto correcto
+COPY ./templates /app/templates
+COPY ./static /app/static
+COPY ./main.py /app/
+COPY ./web_main.py /app/
+COPY ./supervisord.conf /app/
+COPY ./requirements.txt /app/
 
-# Copiar el resto del código
-COPY . .
+# Instala dependencias de Python
+RUN pip install --no-cache-dir -r /app/requirements.txt
 
-EXPOSE 8000
+# Comando por defecto
+CMD ["supervisord", "-c", "/app/supervisord.conf"]
 
-# Ejecutar la app
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]

@@ -1,6 +1,9 @@
-databases[postgresql]
-asyncpg
 fastapi==0.95.0
 uvicorn==0.22.0
+databases[postgresql]
+jinja2
+asyncpg
 psycopg2-binary==2.9.5
 python-dotenv==0.21.0
+httpx                
+aiofiles             

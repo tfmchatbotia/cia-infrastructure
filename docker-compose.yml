@@ -1,39 +1,35 @@
-
-
 services:
   tfm_ai_postgres:
-    image: postgres:latest
+    image: postgres:16
+    build:
+      context: ./postgres_custom
     container_name: tfm_ai_postgres_container
     environment:
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
       POSTGRES_DB: ${POSTGRES_DB}
     ports:
-      - "5432:5432"
+      - "127.0.0.1:5432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
-      # - ./postgres_custom/estructure.sql:/docker-entrypoint-initdb.d/estructure.sql  # SOLO ESQUEMA
-      - ./postgres_custom/estructure_full_data.sql:/docker-entrypoint-initdb.d/estructure_full_data.sql # ESQUEMA + DATOS
-
+      - ./postgres_custom/estructure_full_data.sql:/docker-entrypoint-initdb.d/estructure_full_data.sql
     networks:
       - tfm_ai_network
-
 
   tfm_ai_python:
     build:
       context: ./python_custom
     container_name: tfm_ai_python_container
     volumes:
-      - ./app:/app
-      - ./.env:/app/.env  # MONTA explícitamente el .env en el contenedor
+      - ./python_custom:/app      
     working_dir: /app
     env_file:
       - .env
-    command: ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
     depends_on:
       - tfm_ai_postgres
     ports:
       - "127.0.0.1:8000:8000"
+      - "127.0.0.1:9000:9000"
     networks:
       - tfm_ai_network
 
