@@ -47,20 +47,20 @@ Veréis que hay un fichero __init__.py es el que permite que se pueda llamar a o
 
 
 
-el codigo de la api se llama a traves de  127.0.0.1  
+el código de la api se llama a través de  127.0.0.1  
 
 .- http://127.0.0.1:8000/docs documentación del servicio y se puede probar
 
- Tiene dos metodos un get y otro post es este último se puede ejecutar cualquier consulta sql 
+ Tiene dos métodos un get y otro post es este último se puede ejecutar cualquier consulta sql 
 
 En esta URL esta el Chat 
 
-.- http://127.0.0.1:9000 Pagina del Chat con logos Ramon Areces y Universidad de Alcala Simula la llamada esta el codigo comentado la  llamada real 
+.- http://127.0.0.1:9000 Pagina del Chat con logos Ramon Areces y Universidad de Alcalá Simula la llamada esta el código comentado la  llamada real 
 
 
 Sobre la base de datos
 
-Dada esta configuración solo hay que comentar o descomentar la linea de la bbdd para que carge los esquemas los esquemas + datos 
+Dada esta configuración solo hay que comentar o des comentar la línea de la bbdd para que actualice los esquemas los esquemas + datos 
 
   
     volumes:
