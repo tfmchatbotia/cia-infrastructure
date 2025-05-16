@@ -1,6 +1,6 @@
 services:
   tfm_ai_postgres:
-    image: postgres:16
+    image: postgres:lastest
     build:
       context: ./postgres_custom
     container_name: tfm_ai_postgres_container
